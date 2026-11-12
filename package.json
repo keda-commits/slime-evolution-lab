@@ -1,0 +1,10 @@
+{
+  "name": "slime-evolution-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 8765",
+    "test": "node tools/compare-forms.mjs 240 11 22 33 && node tools/autoplay.mjs 15 8",
+    "report": "node tools/compare-forms.mjs 240 11 22 33 > docs/sim-forms.md; node tools/autoplay.mjs 15 8 > docs/sim-autoplay.md"
+  }
+}
